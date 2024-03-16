@@ -1,0 +1,29 @@
+import sqlite3
+
+# Connect to the SQLite database
+conn = sqlite3.connect('data.db')
+c = conn.cursor()
+
+def search_data(keyword):
+    try:
+        # Construct the SQL query with parameters
+        query = "SELECT * FROM table_name WHERE column LIKE ?"
+        # Execute the query with the provided keyword as a parameter
+        c.execute(query, ('%' + keyword + '%',))
+        # Fetch the results
+        results = c.fetchall()
+        if results:
+            print("Search Results:")
+            for row in results:
+                print(row)
+        else:
+            print("No matching data found.")
+    except Exception as e:
+        print(f"Error searching data: {e}")
+
+# Example usage:
+keyword = input("Kwazulu-natal: ")
+search_data(keyword)
+
+# Close the database connection
+conn.close()

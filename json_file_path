@@ -1,0 +1,23 @@
+import json
+
+def read_json(json_file_path):
+    """
+    Read data from a JSON file and return it as a Python object.
+    
+    :param json_file_path: Path to the JSON file.
+    :return: Data read from the JSON file.
+    """
+    try:
+        # Open the JSON file and load its contents into a Python object
+        with open(json_file_path, 'r') as json_file:
+            data = json.load(json_file)
+        return data
+    except FileNotFoundError:
+        print(f"File '{json_file_path}' does not exist.")
+    except Exception as e:
+        print(f"Error reading JSON file: {e}")
+
+# Example usage:
+json_file_path = 'voting.stats.json'  # Replace with the path to your JSON file
+json_data = read_json(json_file_path)
+print(json_data)

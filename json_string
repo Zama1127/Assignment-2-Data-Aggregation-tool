@@ -1,0 +1,11 @@
+import json
+
+# Specify the path to your JSON file
+json_file_path = 'voting.stats.json'
+
+# Open the JSON file and load its contents into a Python dictionary
+with open(json_file_path, 'r') as json_file:
+    data = json.load(json_file)
+
+# Now you can work with the data dictionary
+print(data)

@@ -1,0 +1,47 @@
+[
+    {
+        "Province": "Eastern Cape",
+        "Population": "3,439,325",
+        "Percentage": "12.41%"
+    },
+    {
+        "Province": "Free State",
+        "Population": "1,456,935",
+        "Percentage": "5.26%"
+    },
+    {
+        "Province": "Gauteng",
+        "Population": "6,542,033",
+        "Percentage": "23.6%"
+    },
+    {
+        "Province": "Kwazulu-natal",
+        "Population": "5,738,272",
+        "Percentage": "20.7%"
+    },
+    {
+        "Province": "Mpumalanga",
+        "Population": "2,025,074",
+        "Percentage": "7.3%"
+    },
+    {
+        "Province": "Northern Cape",
+        "Population": "656,831",
+        "Percentage": "2.37%"
+    },
+    {
+        "Province": "Limpopo",
+        "Population": "2,779,668",
+        "Percentage": "10.03%"
+    },
+    {
+        "Province": "North West",
+        "Population": "1,768,580",
+        "Percentage": "6.38%"
+    },
+    {
+        "Province": "Western Cape",
+        "Population": "3,317,102",
+        "Percentage": "11.96%"
+    }
+]
